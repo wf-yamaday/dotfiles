@@ -1,0 +1,95 @@
+{
+     // 共通設定
+    "editor.renderControlCharacters": true,
+    "editor.suggestSelection": "first", // サジェスト機能の改善
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.minimap.enabled": false, // 右側のミニマップを削除
+    "window.zoomLevel": 0, // デフォルトの拡大率
+    "editor.tabSize": 2, // インデントはスペース2つ
+    "editor.renderWhitespace": "all", // スペースの表示
+    "editor.insertSpaces": true, // デフォルト設定なのでなくてもOK
+    "editor.formatOnSave": false, // 保存時の自動保存設定
+    "workbench.iconTheme": "material-icon-theme", // icon-themaの適用
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+
+   // latex
+    "workbench.startupEditor": "newUntitledFile",
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-e",
+                "$latex=q/uplatex %O -synctex=1 -interaction=nonstopmode -file-line-error %S/",
+                "-e",
+                "$bibtex=q/upbibtex %O %B/",
+                "-e",
+                "$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/",
+                "-e",
+                "$makeindex=q/upmendex %O -o %D %S/",
+                "-e",
+                "$dvipdf=q/dvipdfmx %O -o %D %S/",
+                "-norc",
+                "-pdfdvi",
+                "%DOC%"
+            ]
+        }
+    ],
+    "latex-workshop.view.pdf.viewer": "tab",
+
+    // swagger
+    "yaml.schemas": {
+        "http://json.schemastore.org/swagger-2.0": [
+            "*swagger.yaml",
+            "*swagger.yml"
+        ]
+    },
+
+    // js/vue
+    "files.associations": {
+        "*.vue": "vue"
+    },
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        {
+            "language": "vue",
+            "autoFix": true
+        }
+    ],
+    "eslint.autoFixOnSave": true,
+    "prettier.singleQuote": true, // prettierのシングルクオーテーションオプションをon
+    
+    // python
+    "[python]": {
+        "editor.formatOnSave": true
+    },
+    "python.jediEnabled": false,
+
+    // java
+    "[java]": {
+        "editor.formatOnSave": true
+    },
+    "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication -javaagent:\"${env:HOME/.vscode/extensions/gabrielbb.vscode-lombok-0.9.9/server/lombok.jar\"",
+    "java.home": "/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home",
+
+    // elixir
+    "[elixir]": {
+        "editor.formatOnSave": true
+    },
+    
+    // html
+    "[html]": {
+        "editor.formatOnSave": true
+    },
+    "html.format.enable": true, // 既定のHTMLフォーマッタを有効
+    "html.format.endWithNewline": true, // 末尾に改行を入れる
+    "html.format.extraLiners": "head, body, /html", // 直前に改行を1つ入れるタグのリスト
+    "html.format.indentHandlebars": true, // 書式設定とインデント
+    "html.format.indentInnerHtml": true // <head>セクションと<body>セクションをインデントする
+}

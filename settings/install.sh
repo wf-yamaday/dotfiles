@@ -13,3 +13,6 @@ do
 
     ln -fs "$DOTPATH/$f" "$HOME"/"$f"
 done
+
+# vscode setting.json
+ln -fs "$DOTPATH/settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
