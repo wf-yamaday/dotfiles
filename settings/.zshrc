@@ -48,7 +48,7 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # when start zsh launch tmux
 if which tmux > /dev/null; then
-    if [ -z $TMUX ]; then
+    if [ -z $TMUX ] &&  && [[ $VSCODE_PID == "" ]]; then
       if tmux has-session > /dev/null; then
         tmux attach
       else
