@@ -38,6 +38,7 @@ formulas=(
     ssh-copy-id
     tmux
     direnv
+    gibo
 )
 
 "brew tap..."
