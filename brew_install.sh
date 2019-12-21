@@ -54,6 +54,7 @@ done
 
 casks=(
     alacritty
+    macdown
 )
 
 echo "start brew cask install apps..."
@@ -70,3 +71,4 @@ HOMEBREW INSTALLED! bye.
 **************************************************
 
 END
+
