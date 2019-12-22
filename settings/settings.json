@@ -91,5 +91,27 @@
     "html.format.endWithNewline": true, // 末尾に改行を入れる
     "html.format.extraLiners": "head, body, /html", // 直前に改行を1つ入れるタグのリスト
     "html.format.indentHandlebars": true, // 書式設定とインデント
-    "html.format.indentInnerHtml": true // <head>セクションと<body>セクションをインデントする
+    "html.format.indentInnerHtml": true, // <head>セクションと<body>セクションをインデントする
+    
+    // golang
+    "go.useLanguageServer": true,
+    "[go]": {
+        "editor.formatOnSave": true,
+        "editor.snippetSuggestions": "none",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true,
+        }
+    },
+    "gopls": {
+        "usePlaceholders": true, // add parameter placeholders when completing a function
+
+        // Experimental settings
+        "completeUnimported": true, // autocomplete unimported packages
+        "watchFileChanges": true,  // watch file changes outside of the editor
+        "deepCompletion": true,     // enable deep completion
+    },
+    "go.toolsEnvVars": {
+        "GO111MODULE": "on",
+    },
+    "go.formatTool": "goimports",
 }
