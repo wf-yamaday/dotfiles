@@ -54,15 +54,9 @@
     "files.associations": {
         "*.vue": "vue"
     },
-    "eslint.validate": [
-        "javascript",
-        "javascriptreact",
-        {
-            "language": "vue",
-            "autoFix": true
-        }
-    ],
-    "eslint.autoFixOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
     "prettier.singleQuote": true, // prettierのシングルクオーテーションオプションをon
     
     // python
