@@ -17,7 +17,7 @@
         "**/.factorypath": true
     },
 
-   // latex
+    // latex
     "workbench.startupEditor": "newUntitledFile",
     "latex-workshop.latex.tools": [
         {
@@ -66,12 +66,14 @@
     "python.jediEnabled": false,
 
     // java
+    "java.home": "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home",
+    "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication -javaagent:\"/Users/yamaday/.vscode/extensions/gabrielbb.vscode-lombok-0.9.9/server/lombok.jar\"",
     "[java]": {
-        "editor.formatOnSave": true
+        "editor.formatOnSave": true,
+        "editor.tabSize": 4,
+        "editor.detectIndentation": false
     },
-    "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication -javaagent:\"${env:HOME/.vscode/extensions/gabrielbb.vscode-lombok-0.9.9/server/lombok.jar\"",
-    "java.home": "/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home",
-
+    
     // elixir
     "[elixir]": {
         "editor.formatOnSave": true
@@ -108,4 +110,10 @@
         "GO111MODULE": "on",
     },
     "go.formatTool": "goimports",
+    "typescript.tsc.autoDetect": "off",
+    "grunt.autoDetect": "off",
+    "jake.autoDetect": "off",
+    "npm.autoDetect": "off",
+    "gulp.autoDetect": "off",
+    "workbench.statusBar.visible": true,
 }
