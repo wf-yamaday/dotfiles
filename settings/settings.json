@@ -1,10 +1,10 @@
 {
-     // 共通設定
+    // 共通設定
     "editor.renderControlCharacters": true,
     "editor.suggestSelection": "first", // サジェスト機能の改善
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "editor.minimap.enabled": false, // 右側のミニマップを削除
-    "window.zoomLevel": 0, // デフォルトの拡大率
+    "window.zoomLevel": -1, // デフォルトの拡大率
     "editor.tabSize": 2, // インデントはスペース2つ
     "editor.renderWhitespace": "all", // スペースの表示
     "editor.insertSpaces": true, // デフォルト設定なのでなくてもOK
@@ -58,7 +58,9 @@
         "source.fixAll.eslint": true
     },
     "prettier.singleQuote": true, // prettierのシングルクオーテーションオプションをon
-    
+    // "eslint.enable": true,
+    // "javascript.validate.enable": false,
+
     // python
     "[python]": {
         "editor.formatOnSave": true
