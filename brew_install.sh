@@ -27,10 +27,9 @@ formulas=(
     peco
     hub
     tig
-    node
+    nodebrew
     python3
     mysql@5.7
-    sqlite
     ricty
     sqlite
     markdown
