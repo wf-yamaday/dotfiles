@@ -38,6 +38,8 @@ formulas=(
     tmux
     direnv
     gibo
+    go
+    elixir
 )
 
 "brew tap..."
