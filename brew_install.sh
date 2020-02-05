@@ -53,6 +53,9 @@ for formula in "${formulas[@]}"; do
 done
 
 casks=(
+    google-chrome
+    slack
+    karabiner-elements
     alacritty
     macdown
 )
