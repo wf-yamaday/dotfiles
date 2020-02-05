@@ -58,6 +58,10 @@ casks=(
     google-chrome
     slack
     karabiner-elements
+    homebrew/cask-versions/sequel-pro-nightly
+    visual-studio-code
+    docker
+    alfred
     alacritty
     macdown
 )

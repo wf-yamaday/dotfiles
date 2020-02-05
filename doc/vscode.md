@@ -12,3 +12,21 @@ Microsoftが提供しているテキストエディタ
 3. 「Shell Command: Install 'code' command in PATH」でEnter
 
 ターミナルから`code`コマンドでVSCodeを起動できる．
+
+## 拡張機能
+
+- Japanese Language Pack
+- Material Icon Theme
+- Markdown All in One
+- indent-rainbow
+- Bracket Pair Colorizer
+- Clairvoyant
+- Copy Syntax
+- Vim
+- Docker
+- ESLint
+- Prettier - Code formatter
+- Vetur
+- ElixirLinter
+- GO
+- Java Extension Pack
