@@ -64,6 +64,8 @@ casks=(
     alfred
     alacritty
     macdown
+    virtualbox
+    vagrant
 )
 
 echo "start brew cask install apps..."
