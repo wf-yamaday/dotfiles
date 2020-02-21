@@ -40,6 +40,7 @@ formulas=(
     gibo
     go
     elixir
+    imagemagick
 )
 
 "brew tap..."
