@@ -41,6 +41,8 @@ formulas=(
     go
     elixir
     imagemagick
+    exa
+    bat
 )
 
 "brew tap..."
