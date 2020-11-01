@@ -16,3 +16,6 @@ done
 
 # vscode setting.json
 ln -fs "$DOTPATH/settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
+
+# alacritty
+ln -fs "$DOTPATH/settings/alacritty.yml" "$HOME/.alacritty.yml"
