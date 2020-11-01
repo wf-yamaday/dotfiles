@@ -10,6 +10,7 @@
     "editor.insertSpaces": true, // デフォルト設定なのでなくてもOK
     "editor.formatOnSave": false, // 保存時の自動保存設定
     "workbench.iconTheme": "material-icon-theme", // icon-themaの適用
+    "workbench.editor.enablePreview": false,
     "files.exclude": {
         "**/.classpath": true,
         "**/.project": true,
@@ -69,7 +70,7 @@
 
     // java
     "java.home": "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home",
-    "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication -javaagent:\"/Users/yamaday/.vscode/extensions/gabrielbb.vscode-lombok-0.9.9/server/lombok.jar\"",
+    "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication -javaagent:\"/Users/yamaday/.vscode/extensions/gabrielbb.vscode-lombok-1.0.0/server/lombok.jar\"",
     "[java]": {
         "editor.formatOnSave": true,
         "editor.tabSize": 4,
@@ -118,4 +119,5 @@
     "npm.autoDetect": "off",
     "gulp.autoDetect": "off",
     "workbench.statusBar.visible": true,
+    "workbench.editor.showTabs": true,
 }
