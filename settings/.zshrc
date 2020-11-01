@@ -56,3 +56,12 @@ if which tmux > /dev/null; then
       fi
     fi
 fi
+
+# opam configuration
+test -r $HOME/.opam/opam-init/init.zsh && . $HOME/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/yamaday/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/yamaday/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/yamaday/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/yamaday/Downloads/google-cloud-sdk/completion.zsh.inc'; fi

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "installing homebrew..."
-which brew >/dev/null 2>&1 || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+which brew >/dev/null 2>&1 || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 echo "run brew doctor..."
 which brew >/dev/null 2>&1 && brew doctor
@@ -40,6 +40,9 @@ formulas=(
     gibo
     go
     elixir
+    imagemagick
+    exa
+    bat
 )
 
 "brew tap..."
@@ -58,8 +61,14 @@ casks=(
     google-chrome
     slack
     karabiner-elements
+    homebrew/cask-versions/sequel-pro-nightly
+    visual-studio-code
+    docker
+    alfred
     alacritty
     macdown
+    virtualbox
+    vagrant
 )
 
 echo "start brew cask install apps..."
