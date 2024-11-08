@@ -59,7 +59,7 @@ casks=(
 
 echo "start brew cask install apps..."
 for cask in "${casks[@]}"; do
-    brew cask install $cask
+    brew install --cask $cask
 done
 
 brew cleanup
