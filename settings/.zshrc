@@ -19,10 +19,6 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
-# java
-export JAVA_HOME=`/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/java_home -v "1.8"`
-PATH=${JAVA_HOME}/bin:${PATH}
-
 # nodebrew
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
@@ -48,7 +44,7 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # when start zsh launch tmux
 if which tmux > /dev/null; then
-    if [ -z $TMUX ] && [[ $TERM_PROGRAM == "vscode" ]]; then
+    if [ -z $TMUX ] && [[ $TERM_PROGRAM != "vscode" ]]; then
       if tmux has-session > /dev/null; then
         tmux attach
       else
@@ -65,3 +61,9 @@ if [ -f '/Users/yamaday/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Use
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/yamaday/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/yamaday/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+. "$HOME/.local/bin/env"
+export PATH="/Users/yamaday/.config/herd-lite/bin:$PATH"
+export PHP_INI_SCAN_DIR="/Users/yamaday/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
