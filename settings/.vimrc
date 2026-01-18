@@ -65,3 +65,15 @@ set hlsearch
 " ESC連打でハイライト解除
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
+" 環境変数の設定
+let $PATH = $HOME . "/.asdf/shims:" . $PATH
+
+" プラグイン系の設定
+call plug#begin('~/.vim/plugged')
+" lsp
+Plug 'prabirshrestha/vim-lsp'
+Plug 'mattn/vim-lsp-settings'
+" Auto-complete
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
+call plug#end()
