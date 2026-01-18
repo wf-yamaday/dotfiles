@@ -7,6 +7,8 @@ Gitの設定を最初にしておく．
 git config --global user.email "<your mail>"
 # 設定の確認
 git config --global user.email
+# push origin の設定
+git config --global push.default current
 ```
 
 シェルスクリプトに実行権限を与えておく．
