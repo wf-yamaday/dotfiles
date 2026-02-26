@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if [ $# -ne 1 ]; then
+    echo "Usage: $0 <version>"
+    echo "Example: $0 0.30.0"
+    exit 1
+fi
+
+VERSION="$1"
+TAG="rust-v${VERSION}"
+ARCHIVE="codex-x86_64-unknown-linux-musl.tar.gz"
+URL="https://github.com/openai/codex/releases/download/${TAG}/${ARCHIVE}"
+
+BIN_ORIG="codex-x86_64-unknown-linux-musl"
+INSTALL_PATH="/usr/local/bin/codex"
+
+echo "Downloading Codex v${VERSION}..."
+wget -q "${URL}"
+
+echo "Extracting..."
+tar -zxf "${ARCHIVE}"
+
+echo "Installing to ${INSTALL_PATH}..."
+sudo mv "${BIN_ORIG}" "${INSTALL_PATH}"
+
+echo "Cleaning up..."
+rm "${ARCHIVE}"
+
+echo "Installed Codex version:"
+codex --version
